@@ -11,7 +11,7 @@
   </head>
   <body class="d-flex flex-column min-vh-100">
     <!-- navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color: rgb(248, 146, 248)">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color: rgb(255, 231, 254)">
       <div class="container-fluid">
         <a class="navbar-brand" ref="#">
           <img src= {{rutaLogo}} style="height: 80px; width: auto ; border-radius: 3em;" alt="KANWU">
@@ -43,11 +43,11 @@
       </div>
     </nav>
 
-    <section class="text-overlay parallax mt-5">
-      <div class="container-fluid">
+    <section class="parallax mt-5">
+      <div class="container-fluid text-overlay">
         <div class="row mt-5">
-          <div class="col-sm-12 col-lg-6 mt-5">
-            <h1 class="display-2">Album example</h1>
+          <div class="col-sm-12 col-lg-6 mt-5" >
+            <h1 class="display-2" style="opacity: initial;">Album example</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur. Lorem ipsum, dolor sit
               amet consectetur adipisicing elit. Eligendi quaerat molestias
@@ -59,7 +59,9 @@
         </div>
         <div class="row flex-lg-row">
           <div class="col-sm-12 col-lg-6 mt-3">
-            <button class="btn btn-primary btn-lg">contactanos</button>
+            <button class="btn btn-lg  btn-light" (click)="openWhatsapp()">
+              <i class="bi bi-whatsapp"></i>
+              contactanos</button>
           </div>
         </div>
       </div>

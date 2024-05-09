@@ -4,27 +4,13 @@
 }
 
 .parallax {
-  background-image: url("../assets/BGMonterrey.jpg");
+  background-image: url("https://images.pexels.com/photos/6974748/pexels-photo-6974748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
-button {
-  background-color: darkmagenta;
-  border-color: darkorchid;
-  color: white;
-  padding: 15px 32px;
-}
-
-body{
-  background-color: rgb(237, 152, 237);
-  border-color: darkorchid;
-  color: white;
-}
-
-.sectionTitle{
-  color: rgb(255, 255, 255);
+body {
+  background-color: #ffb8f7;
 }

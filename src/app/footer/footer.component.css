@@ -10,3 +10,8 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+button {
+  border-radius: 3em;
+  border: solid 1px #226001;
+}
