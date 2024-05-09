@@ -1,0 +1,14 @@
+.text-overlay {
+  position: relative;
+  color: white; /* Cambia el color del texto según sea necesario para que se vea bien con la imagen */
+}
+
+.parallax {
+  background-image: url("https://images.pexels.com/photos/6974748/pexels-photo-6974748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

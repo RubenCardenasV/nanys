@@ -1,0 +1,12 @@
+footer {
+  margin-top: auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding: 0;
+  margin-right: 0;
+  padding-right: 0;
+  position: fixed;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+}
