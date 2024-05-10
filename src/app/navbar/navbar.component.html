@@ -1,0 +1,35 @@
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light"  style="background-color: rgb(255, 231, 254)">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src= {{rutaLogo}} style="height: 80px; width: auto ; border-radius: 3em;" alt="KANWU">
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#Menu"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" style="font-size: 1.5em;" id="Menu">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active"  (click)="scrollTo('home')"><i class="bi bi-house-door-fill"></i> Inicio</a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active"  (click)="scrollTo('services')"><i class="bi bi-bag-heart"></i> Servicios</a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" (click)="scrollTo('us')"><i class="bi bi-bookmark-heart-fill"></i> Nosotros</a>
+            <hr>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

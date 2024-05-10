@@ -17,10 +17,10 @@ export class AppComponent {
     window.open('https://api.whatsapp.com/send?phone=526648223954', '_blank');
   }
 
-  scrollTo(sectionId: string) {
-    var section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
+  // scrollTo(sectionId: string) {
+  //   var section = document.getElementById(sectionId);
+  //   if (section) {
+  //     section.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // }
 }

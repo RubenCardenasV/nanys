@@ -10,45 +10,12 @@
     />
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <!-- navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color: rgb(255, 231, 254)">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-          <img src= {{rutaLogo}} style="height: 80px; width: auto ; border-radius: 3em;" alt="KANWU">
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#Menu"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" style="font-size: 1.5em;" id="Menu">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/"><i class="bi bi-house-door-fill"></i> Inicio</a>
-              <hr>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active"  (click)="scrollTo('services')"><i class="bi bi-bag-heart"></i> Servicios</a>
-              <hr>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" (click)="scrollTo('us')"><i class="bi bi-bookmark-heart-fill"></i> Nosotros</a>
-              <hr>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <app-navbar></app-navbar>
 
-    <section class=" mt-5" style="
+    <section class="pt-5 mb-5" style="
               height: 100vh;
-              width: 100vw;">
+              width: 100vw;"
+              id="home">
       <figure class="figure" style="position: absolute;">
         <img src="{{img}}" class="figure-img img-fluid rounded " 
         style="position: relative;
@@ -59,13 +26,13 @@
           object-fit: cover;
           background-repeat: no-repeat;
           background-size: cover;" 
-        alt="A generic square placeholder image with rounded corners in a figure.">
+        alt="Fondo">
       </figure>
       <div class="container-fluid text-overlay">
-        <div class="row mt-5">
-          <div class="col-sm-12 col-lg-6 mt-5" >
+        <div class="row ">
+          <div class="col-sm-12 col-lg-6 mt-5 px-5" >
             <h1 class="display-2">Album example</h1>
-            <p>
+            <p style="text-align: justify;">
               Lorem ipsum dolor sit amet consectetur. Lorem ipsum, dolor sit
               amet consectetur adipisicing elit. Eligendi quaerat molestias
               rerum in fugit dolorum dolore hic, provident accusamus
@@ -75,7 +42,7 @@
           </div>
         </div>
         <div class="row flex-lg-row">
-          <div class="col-sm-12 col-lg-6 mt-3">
+          <div class="col-sm-12 col-lg-6 mt-3 px-5">
             <button class="btn btn-lg  btn-light" (click)="openWhatsapp()">
               <i class="bi bi-whatsapp"></i>
               contactanos</button>
@@ -84,11 +51,11 @@
       </div>
     </section>
     <!-- seccion de contacto -->
-    <section id="us" class="py-3">
-      <div class="container">
+    <section class="py-3">
+      <div class="container " id="us">
         <div class="row py-3 text-overlay">
           <div class="col-lg-12">
-            <h2 class="display-4" style="color: white;">¿Quienes somos?</h2>
+            <h2 class="display-4">¿Quienes somos?</h2>
             <hr>
           </div>
         </div>
@@ -102,13 +69,13 @@
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="{{img}}" class="d-block img-fluid w-100" alt="prueba">
+                  <img src="{{img}}" class="d-block img-fluid" alt="prueba">
                 </div>
                 <div class="carousel-item">
-                  <img src="{{img}}" class="d-block img-fluid w-100" alt="prueba">
+                  <img src="{{img}}" class="d-block img-fluid" alt="prueba">
                 </div>
                 <div class="carousel-item">
-                  <img src="{{img}}" class="d-block img-fluid w-100" alt="prueba">
+                  <img src="{{img}}" class="d-block img-fluid" alt="prueba">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -154,69 +121,36 @@
       </div>
     </section>
 
-    <section id="services">
+    <section id="services" class="py-3">
       <div class="container">
-        <div class="row py-3 text-overlay">
-          <div class="col">
-            <h2 class=" display-4" style="color: white;">Servicios</h2>
+        <div class="py-3 text-overlay">
+          <div >
+            <h2 class="display-4">Servicios</h2>
             <hr>
-          </div>
-        </div>
-        <div class="row text-center py-3 px-3">
-          <div class="col-sm-12 col-lg-3 col-mb-6 py-3 px-3">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="{{img}}" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 mx-5 my-3">
+              <div class="card">
+                <img class="card-img-top" src="{{img}}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>  
             </div>
-          </div>
-          <div class="col-sm-12 col-lg-3 col-mb-6 py-3 px-3">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="{{img}}" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 mx-5 my-3">
+              <div class="card">
+                <img class="card-img-top" src="{{img}}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>  
             </div>
-          </div>
-          <div class="col-sm-12 col-lg-3 col-mb-6 py-3 px-3">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="{{img}}" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-lg-3 col-mb-6 py-3 px-3">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="{{img}}" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-lg-3 col-mb-6 py-3 px-3">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="{{img}}" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-lg-3 col-mb-6 py-3 px-3">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="{{img}}" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
       </section>
   </body>
   <div class="footer mt-auto py-3 bg-light">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 col-sm-12">
           <blockquote>
@@ -233,14 +167,14 @@
           </blockquote>
           <hr>
           <ul class="list-inline ">
-            <li class="list-inline-item"><a href="{{urlInstagram}}" style="color: black;"><i class="bi bi-facebook"></i></a></li>
-            <li class="list-inline-item"><a href="{{urlInstagram}}" style="color: black;"><i class="bi bi-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="{{urlInstagram}}" style="color: black;"><i class="bi bi-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="{{urlInstagram}}" class="icon-strong" ><i class="bi bi-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="{{urlInstagram}}" class="icon-strong"><i class="bi bi-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="{{urlInstagram}}" class="icon-strong"><i class="bi bi-instagram"></i></a></li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
           <p class="text-center">Copyright &copy; Nanny 2024</p>
