@@ -1,8 +1,12 @@
 .text-overlay {
+  margin-top: 20%;
   position: relative;
   color: white; /* Cambia el color del texto según sea necesario para que se vea bien con la imagen */
 }
 
+.text-title {
+  color: white; /* Cambia el color del texto según sea necesario para que se vea bien con la imagen */
+}
 body {
   background-color: #ffb8f7;
 }
@@ -14,6 +18,3 @@ body {
 
 
 
-.card {
-  width: 20rem;
-}
