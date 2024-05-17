@@ -23,4 +23,8 @@ export class AppComponent {
   //     section.scrollIntoView({ behavior: 'smooth' });
   //   }
   // }
+
+//textos 
+  mission: string = 'Brindar servicios profesionales confiables a padres de familia para el cuidado de sus hijos con una estructura pedagógica con base en el principio que cada niño es un ser único ñ, irrepetible y valioso.';
+  vission: string = 'Ser la empresa de referencia en servicio de niñeras que genere confianza a los padres de familia para el cuidado y desarrollo de sus hijos.';
 }

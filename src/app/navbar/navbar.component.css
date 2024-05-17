@@ -1,0 +1,9 @@
+img{
+    height: 100px; 
+    width: auto ; 
+    border-radius: 3em;
+}
+
+nav{
+    background-color: rgb(255, 231, 254);
+}

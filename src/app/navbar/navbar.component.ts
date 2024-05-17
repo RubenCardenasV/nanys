@@ -12,16 +12,17 @@ export class NavbarComponent {
   lastScrollPosition: number = 0;
 
   scrollTo(sectionId: string) {
+    const navbarCollapse = document.getElementById('Menu') as HTMLElement;
     var section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
+    navbarCollapse.classList.remove('show');
+  
+
   }
 
   ngOnInit(): void {
-    $('.js-scroll-trigger').click(() => {
-      $('.navbar-collapse').collapse('hide');
-    });
   }
 
   @HostListener('window:scroll', [])
